@@ -1,0 +1,15 @@
+{
+  "name": "ezgamingworld.com",
+  "version": "1.0.0",
+  "description": "this is my gaming website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rohit kumar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "ezgamingworld.com"
+  }
+}
