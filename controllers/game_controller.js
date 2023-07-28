@@ -1,3 +1,5 @@
 module.exports.game=function(req,res){
-    return res.end('game page');
+    return res.render('games',{
+        title:'games'
+    });
 }

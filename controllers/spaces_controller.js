@@ -1,4 +1,11 @@
 
 module.exports.spaces=function(req,res){
-    return res.end('spaces page');
+    return res.render('spaces',{
+        title:'spaces'
+    });
 }
+
+
+
+
+    

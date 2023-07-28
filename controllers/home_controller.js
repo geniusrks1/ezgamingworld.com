@@ -1,5 +1,7 @@
 module.exports.home=function(req,res){
-    return res.end('home page');
+    return res.render('home',{
+        title:'home'
+    });
 }
 
 
