@@ -1,186 +1,111 @@
 
 
 
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
- 
-  .footer {
+/* Header styles */
+header {
     background-color: #333;
     color: #fff;
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    width: 100%;
-    padding: 20px ;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.common-nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .footer-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .footer-links li {
-    margin-right: 20px;
-  }
-  
-  .footer-links li:last-child {
-    margin-right: 0;
-  }
-  
-  .footer-links li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .back-to-top-btn {
-    display: none;
-    background-color: #dfe2e5;
+}
+
+.logo a {
     color: #fff;
     font-size: 24px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(168, 167, 167, 0.15);
-    outline: none;
-  }
-  
-  /* Media query for responsive design */
-  @media screen and (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-    }
-  }
-  
-
-
-
-
-
-
-  .header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-  }
-  
-  .header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo a {
-    color: #fff;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-menu ul {
+}
+
+/* Search input styles */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Menu styles */
+.common-menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-  }
-  
-  .nav-menu li {
-    margin-right: 20px;
-  }
-  
-  .nav-menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .nav-menu a {
+    gap: 20px;
+}
+
+.common-menu li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  .hamburger-menu {
+    padding: 10px;
+}
+
+.common-menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
     display: none;
-    cursor: pointer;
-  }
-  
-  .hamburger-menu .bar {
+}
+
+.dropdown-menu span {
+    display: block;
     width: 25px;
     height: 3px;
+    margin: 6px;
     background-color: #fff;
-    margin: 6px 0;
-  }
-  
-  .responsive-menu {
-    display: none;
-  }
-  
-  /* Media query for responsive design */
-  @media screen and (max-width: 768px) {
-    .header-content {
-      flex-wrap: wrap;
+    cursor: pointer;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .common-menu {
+        display: none;
     }
-  
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      background-color: #222;
-      position: absolute;
-      top: 58px;
-      left: 0;
-      width: 100%;
+
+    .common-menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
     }
-  
-    .nav-menu ul {
-      flex-direction: column;
-      padding: 10px;
+
+    .common-menu.show li {
+        padding: 10px;
     }
-  
-    .nav-menu li {
-      margin: 10px 0;
+
+    .dropdown-menu {
+        display: block;
+        cursor: pointer;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer styles */
+
+
+
+
   
-    .hamburger-menu {
-      display: block;
-    }
-  
-    .responsive-menu {
-      display: block;
-      text-align: center;
-    }
-  
-    .responsive-menu ul {
-      list-style: none;
-      padding: 0;
-    }
-  
-    .responsive-menu li {
-      margin: 10px 0;
-    }
-  }

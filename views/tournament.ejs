@@ -1,4 +1,93 @@
 
 
 
-<main> tournament main part</main>
+
+
+
+<link rel="stylesheet" href="/css/tournament.css">
+
+
+  
+          <main>
+            <nav class="tournament-nav">
+              <ul>
+                <li class="active" onclick="showCategory('upcoming')">Upcoming</li>
+                <li onclick="showCategory('live')">Live</li>
+                <li onclick="showCategory('completed')">Completed</li>
+                <li onclick="showCategory('achievements')">Achievements</li>
+              </ul>
+            </nav>
+            <section id="upcoming" class="category">
+              <h2>Upcoming Tournaments</h2>
+              <div class="tournament">
+                <h3>Tournament Name: Summer Showdown</h3>
+                <p>Date: August 15, 2023</p>
+                <p>Location: City Stadium</p>
+              </div>
+              <div class="tournament">
+                <h3>Tournament Name: Fall Classic</h3>
+                <p>Date: September 5, 2023</p>
+                <p>Location: Sports Arena</p>
+              </div>
+            </section>
+            <section id="live" class="category" style="display: none;">
+              <h2>Live Tournaments</h2>
+              <div class="tournament">
+                <h3>Tournament Name: Championship Clash</h3>
+                <p>Date: Ongoing</p>
+                <p>Location: Virtual Arena</p>
+              </div>
+              <div class="tournament">
+                <h3>Tournament Name: Global eSports Challenge</h3>
+                <p>Date: Ongoing</p>
+                <p>Location: Online</p>
+              </div>
+            </section>
+            <section id="completed" class="category" style="display: none;">
+              <h2>Completed Tournaments</h2>
+              <div class="tournament">
+                <h3>Tournament Name: Spring Shootout</h3>
+                <p>Date: July 20, 2023</p>
+                <p>Location: Community Hall</p>
+              </div>
+              <div class="tournament">
+                <h3>Tournament Name: Winter Warzone</h3>
+                <p>Date: February 10, 2023</p>
+                <p>Location: Arena Arena</p>
+              </div>
+            </section>
+            <section id="achievements" class="category" style="display: none;">
+              <h2>Achievements</h2>
+              <div class="achievement">
+                <h3>Player Name: ProGamer123</h3>
+                <p>Achievement: First Place in Summer Showdown</p>
+              </div>
+              <div class="achievement">
+                <h3>Player Name: GamerGal</h3>
+                <p>Achievement: Most Kills in Championship Clash</p>
+              </div>
+            </section>
+          </main>
+   
+
+    
+
+      <script src="js/tournament.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

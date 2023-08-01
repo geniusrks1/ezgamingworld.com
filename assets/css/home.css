@@ -1,0 +1,569 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* home slider */
+
+.home-slider {
+    /* border: 5px solid black; */
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* background-color: #f9f9f9; */
+    margin: 15px auto;
+    position: relative;
+  }
+  
+  .slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .card {
+    /* padding: 20px; */
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    /* border: 5px solid #ccc; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 100%;
+    /* margin-bottom: 10px; */
+  }
+  
+  .card.active {
+    opacity: 1;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f1e8e8;
+    font-size: 24px;
+  }
+  
+  .controls .prev-btn {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .controls .next-btn {
+    position: absolute;
+    right: 10px;
+  }
+
+
+  /* Hero Section Styles */
+.hero {
+    background-color: #f9f9f9;
+    padding: 6px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    /* margin-bottom: 2px; */
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* Featured Games Section Styles */
+.featured-games {
+    background-color: #fff;
+    padding: 20px;
+   
+    /* border: 5px solid black; */
+}
+
+
+.featured-games h2 {
+    font-size: 28px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* More spacing below the heading */
+    position: relative;
+    left:616px;
+  }
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.game-card {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.game-card img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* margin-bottom: 10px; */
+}
+
+.game-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.game-card p {
+    display: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.game-card a {
+    display: block;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+
+/* Latest Feed Section Styles */
+.latest-feed {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background color */
+  }
+  
+  .latest-feed h2 {
+    font-size: 28px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* More spacing below the heading */
+  }
+  
+  .feed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feed-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background color for the cards */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .feed-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .feed-number {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #555;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px 0 0 10px; /* Slightly rounder corners */
+    margin-right: 15px; /* Increased spacing between number and content */
+  }
+  
+  .feed-content {
+    padding: 20px;
+  }
+  
+  .feed-content h3 {
+    font-size: 22px; /* Larger font size for the headings */
+    margin-bottom: 10px;
+  }
+  
+  .feed-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666; /* Slightly lighter text color for the content */
+  }
+  
+  .feed-read-more-btn {
+    padding: 10px 20px; /* Slightly increased padding */
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for the button text */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .feed-read-more-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Optional: Add some space below the last feed item */
+  .feed-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* Optional: Add some space below the last feed item */
+  .feed-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+
+  
+/* Upcoming Tournaments Section Styles */
+.upcoming-tournaments {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .upcoming-tournaments h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .tournament-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tournament-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .tournament-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .tournament-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+  
+  .tournament-card p {
+    font-size: 16px;
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  .tournament-card span {
+    background-color: #f1f1f1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .tournament-container a {
+    display: block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+   justify-content: center;
+   position: relative;
+   left: 500px;
+  }
+  
+  .tournament-container a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Center align the grid items if less than 3 */
+  @media (max-width: 900px) {
+    .tournament-container {
+      justify-items: center;
+    }
+  }
+  
+
+  
+
+
+
+
+/* article Section Styles */
+
+.gaming-articles {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .gaming-articles h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .article-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .article-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+  
+  .article-card p {
+    font-size: 16px;
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  .gaming-articles a {
+    display: flex;
+    height: 30px;
+    width: 50px;
+    justify-content: center;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gaming-articles a::before {
+    content: "→"; /* The arrow symbol */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) scale(1.5); /* Make the arrow larger */
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add a transition for smoother animation */
+  }
+  
+  .gaming-articles a:hover::before {
+    opacity: 1;
+    transform: translateY(-50%) scale(2); /* Increase the arrow size on hover */
+  }
+  
+  .gaming-articles a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Add some scaling on hover */
+  }
+  
+  /* Optional: Center align the grid items if less than 3 */
+  @media (max-width: 900px) {
+    .article-container {
+      justify-items: center;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section Styles */
+.contact {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-container p {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical; /* Allow vertical resizing for textarea */
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color:lightgray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color:grey;
+  }
+  
+  /* Optional: Style the required indicator (*) on input fields */
+  .contact-form input:required::after,
+  .contact-form textarea:required::after {
+    content: '*';
+    color: #f00;
+    margin-left: 5px;
+  }
+  
+  /* Optional: Add some space between the form elements */
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+  }
+  
