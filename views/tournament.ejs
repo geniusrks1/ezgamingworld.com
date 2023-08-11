@@ -17,19 +17,38 @@
                 <li onclick="showCategory('achievements')">Achievements</li>
               </ul>
             </nav>
+
+
+
+
             <section id="upcoming" class="category">
-              <h2>Upcoming Tournaments</h2>
-              <div class="tournament">
-                <h3>Tournament Name: Summer Showdown</h3>
-                <p>Date: August 15, 2023</p>
-                <p>Location: City Stadium</p>
-              </div>
-              <div class="tournament">
-                <h3>Tournament Name: Fall Classic</h3>
-                <p>Date: September 5, 2023</p>
-                <p>Location: Sports Arena</p>
-              </div>
-            </section>
+              <a href="tournament/newtournament">Add new tournament</a>
+          
+              <div class="upcoming-tournament-container">
+              <% for (let t of tournaments) { %>
+                  <div class="upcoming-tournament">
+                     
+                      <a href=""><img src="<%= t.img %>" alt="not found"></a>
+                     
+                      <h2>tournament name:<%= t.name %></h2>
+                      <p><strong>Game:</strong> <%= t.game %></p>
+                      <p><strong>Total Slots:</strong> <%= t.totalslots %></p>
+                      <p><strong>Registered Players:</strong> <%= t.player %></p>
+                      <p><strong>Filled Slots:</strong> <%= t.filledslots %></p>
+                      <a href=""> register</a>
+                    </div>
+              <% } %>
+            </div>
+          </section>
+          
+
+
+
+
+
+
+
+
             <section id="live" class="category" style="display: none;">
               <h2>Live Tournaments</h2>
               <div class="tournament">
@@ -69,8 +88,6 @@
             </section>
           </main>
    
-
-    
 
       <script src="js/tournament.js"></script>
 

@@ -37,4 +37,78 @@ body {
     display: block;
   }
   
-  
+ /* upcoming tournament section */
+
+#upcoming {
+  padding: 20px;
+}
+
+#upcoming>a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgb(33, 26, 26);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.upcoming-tournament>a{
+
+  background-color: grey;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+#upcoming a:hover {
+  background-color: grey;
+}
+
+.upcoming-tournament-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.upcoming-tournament {
+  flex: 1;
+  max-width: calc(33.33% - 20px);
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.upcoming-tournament:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upcoming-tournament h2 {
+  margin-top: 10;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.upcoming-tournament img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.upcoming-tournament p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+

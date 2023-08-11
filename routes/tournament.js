@@ -5,4 +5,5 @@ const tournamentController=require('../controllers/tournament_controller.js');
 
 router.get('/',tournamentController.tournament);
 
+
 module.exports=router;
