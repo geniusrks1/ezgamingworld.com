@@ -4,8 +4,8 @@
   "description": "this is my gaming website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    
+    "start": "node ./index.js"
   },
   "author": "rohit kumar",
   "license": "ISC",

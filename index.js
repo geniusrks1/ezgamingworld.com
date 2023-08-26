@@ -3,7 +3,7 @@ const path=require('path');
 const expressLayouts=require('express-ejs-layouts');
 const db=require('./config/mongoose');
 const app=express();
-const PORT=8000;
+
 
 app.use(expressLayouts);
 // extract style and scripts from sub pages into the layout
@@ -23,7 +23,7 @@ app.use('/',require('./routes'));
 
 
 
-
+const PORT=process.env.PORT||8000;
 
 
 app.listen(PORT,(err)=>{
